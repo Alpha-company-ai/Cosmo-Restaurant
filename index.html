@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="برغر محضّر على الطلب، صوصات سموك ماستر الخاصة، وتوصيل داخل الزرقاء.">
+  <meta property="og:title" content="كوزمو سناكس | برغر بطابع كوزمو.">
+  <meta property="og:description" content="نكهة جريئة وصوصات Smoke Master الخاصة في قلب الزرقاء.">
+  <title>كوزمو سناكس | SmokeMaster</title>
+  <link rel="icon" href="image/cozmo-logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div class="topline">
+      <div class="shell topline-inner">
+        <span>سموك ماستر — تجربة كوزمو الأصلية</span>
+        <span class="topline-meta">الزرقاء · توصيل واستلام مباشر</span>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="كوزمو سناكس — الرئيسية">
+          <img src="image/cozmo-logo.jpg" alt="">
+          <span>
+            <strong>COZMO</strong>
+            <small>SMOKEMASTER.JO</small>
+          </span>
+        </a>
+        <nav aria-label="التنقل الرئيسي">
+          <a href="#signatures">اختيارات كوزمو</a>
+          <a href="#menu">المنيو</a>
+          <a href="#visit">موقعنا</a>
+        </nav>
+        <button class="header-order" id="cartButton" type="button" aria-controls="cartDrawer" aria-expanded="false">
+          <span>طلبك</span>
+          <b id="cartCount">0</b>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="status-dot" id="statusDot"></span>
+            <span id="statusText">نفتح الساعة 4 عصراً</span>
+          </div>
+          <p class="hero-overline">BURGER · FIRE · ATTITUDE</p>
+          <h1>برغر بطابع <em>كوزمو.</em></h1>
+          <p class="hero-lead">
+            نكهة جريئة، مكونات مرتّبة وصوصات <span>Smoke Master</span>
+            ما بتلاقيها بمكان ثاني.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#menu">استكشف المنيو <span>←</span></a>
+            <a class="ghost-button" href="https://wa.me/962797666513" target="_blank" rel="noopener">
+              اطلب عبر واتساب
+            </a>
+          </div>
+          <div class="hero-note">
+            <strong>تحضير يومي</strong><span></span>
+            <strong>كميات محدودة</strong><span></span>
+            <strong>من 4 عصراً</strong>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1692737348416-0a4fa4cf1523?auto=format&fit=crop&w=1200&q=88"
+            alt="برغر دجاج مقرمش">
+          <div class="hero-image-shade"></div>
+          <div class="hero-stamp">
+            <small>THE HOUSE</small>
+            <strong>SMOKE</strong>
+            <span>MASTER</span>
+          </div>
+          <div class="hero-feature">
+            <div>
+              <small>الأكثر طلباً</small>
+              <strong>رابتر تشيكن</strong>
+            </div>
+            <span>2.50 د.أ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles" aria-label="مميزات كوزمو">
+      <div class="shell principles-grid">
+        <article>
+          <span>01</span>
+          <div>
+            <strong>على الطلب</strong>
+            <p>كل ساندويشة تنعمل إلك، مش قبل.</p>
+          </div>
+        </article>
+        <article>
+          <span>02</span>
+          <div>
+            <strong>صوصاتنا إلنا</strong>
+            <p>خلطات Smoke Master الخاصة بكوزمو.</p>
+          </div>
+        </article>
+        <article>
+          <span>03</span>
+          <div>
+            <strong>نكهة بلا مساومة</strong>
+            <p>مكونات واضحة وطعم يترك أثر.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="signatures section-shell" id="signatures">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p>اختيارات الشيف</p>
+            <h2>تواقيع كوزمو</h2>
+          </div>
+          <span>ثلاث نكهات بتعرّفك علينا من أول لقمة.</span>
+        </div>
+        <div class="signature-grid" id="signatureGrid"></div>
+      </div>
+    </section>
+
+    <section class="menu-section section-shell" id="menu">
+      <div class="shell">
+        <div class="section-heading menu-heading">
+          <div>
+            <p>اختار مزاجك</p>
+            <h2>المنيو</h2>
+          </div>
+          <span>الأسعار شاملة الصنف فقط · التوصيل حسب المنطقة</span>
+        </div>
+
+        <div class="category-tabs" role="tablist" aria-label="تصنيفات المنيو">
+          <button class="active" type="button" role="tab" aria-selected="true" aria-controls="menuGrid"
+            data-category="all">كل المنيو</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="menuGrid"
+            data-category="chicken">تشيكن</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="menuGrid"
+            data-category="beef">بيف</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="menuGrid"
+            data-category="snacks">سناكس</button>
+        </div>
+        <div class="menu-toolbar">
+          <p><strong id="menuCount">18</strong><span> صنف ظاهر</span></p>
+          <small>اختار الصنف واضغط «أضف للطلب» — سلتك تبقى محفوظة</small>
+        </div>
+        <div class="menu-grid" id="menuGrid" role="tabpanel"></div>
+      </div>
+    </section>
+
+    <section class="visit section-shell" id="visit">
+      <div class="shell visit-card">
+        <div class="visit-copy">
+          <p>لقمتك أقرب مما تتخيّل</p>
+          <h2>من قلب السخنة<br>لكل الزرقاء.</h2>
+          <div class="visit-details">
+            <div>
+              <small>الموقع</small>
+              <strong>السخنة، مقابل مدرسة هند بنت عتبة الثانوية للبنات</strong>
+            </div>
+            <div>
+              <small>ساعات العمل</small>
+              <strong>السبت — الخميس · 4 عصراً حتى 12 ليلاً</strong>
+            </div>
+            <div>
+              <small>طريقة الاستلام</small>
+              <strong>توصيل أو استلام مباشر · لا توجد صالة جلوس</strong>
+            </div>
+          </div>
+          <div class="visit-actions">
+            <a class="primary-button"
+              href="https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D8%B3%D8%AE%D9%86%D8%A9+%D8%A7%D9%84%D8%B2%D8%B1%D9%82%D8%A7%D8%A1+%D9%85%D8%AF%D8%B1%D8%B3%D8%A9+%D9%87%D9%86%D8%AF+%D8%A8%D9%86%D8%AA+%D8%B9%D8%AA%D8%A8%D8%A9"
+              target="_blank" rel="noopener">افتح الموقع</a>
+            <a class="ghost-button dark" href="tel:+962797666513">079 766 6513</a>
+          </div>
+        </div>
+        <div class="visit-mark" aria-hidden="true">
+          <span>C</span>
+          <small>COZMO<br>SNACKS</small>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="shell footer-main">
+        <div class="footer-brand">
+          <a class="footer-brand-mark" href="#top" aria-label="العودة إلى بداية الصفحة">
+            <img src="image/cozmo-logo.jpg" alt="شعار كوزمو سناكس">
+            <span>
+              <strong>COZMO</strong>
+              <small>SMOKEMASTER.JO</small>
+            </span>
+          </a>
+          <p>برغر بطابع جريء، مكونات مرتّبة وتحضير يومي على الطلب.</p>
+        </div>
+        <div class="footer-links">
+          <small>روابط سريعة</small>
+          <a href="#signatures">اختيارات كوزمو</a>
+          <a href="#menu">المنيو</a>
+          <a href="#visit">الموقع وساعات العمل</a>
+        </div>
+        <div class="footer-contact">
+          <small>تواصل</small>
+          <a href="tel:+962797666513">079 766 6513</a>
+          <a href="https://wa.me/962797666513" target="_blank" rel="noopener">واتساب للطلبات</a>
+          <span>الزرقاء · السخنة</span>
+        </div>
+      </div>
+      <div class="shell footer-bottom">
+        <span>© <span id="currentYear"></span> Cozmo Snacks · جميع الحقوق محفوظة</span>
+        <span class="developer-credit">
+          بُنيت التجربة الرقمية بواسطة
+          <a class="developer-link" href="https://anasaldahdoh2005-commits.github.io/CV/" target="_blank"
+            rel="noopener">أنس محمد الدحدوح</a>
+        </span>
+      </div>
+    </footer>
+
+    <button class="floating-cart" id="floatingCart" type="button" hidden>
+      <span>عرض الطلب <b id="floatingCount">0</b></span>
+      <strong id="floatingTotal">0.00 د.أ</strong>
+    </button>
+
+    <div class="drawer-layer" id="cartLayer" aria-hidden="true">
+      <button class="drawer-backdrop" type="button" data-close-cart aria-label="إغلاق الطلب"></button>
+      <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+        <div class="drawer-head">
+          <div>
+            <small>كوزمو سناكس</small>
+            <h2 id="drawerTitle">طلبك</h2>
+          </div>
+          <button type="button" data-close-cart aria-label="إغلاق">×</button>
+        </div>
+
+        <section id="cartPanel">
+          <div class="cart-lines" id="cartLines"></div>
+          <div class="drawer-summary" id="drawerSummary" hidden>
+            <div>
+              <span>إجمالي الأصناف</span>
+              <strong id="cartTotal">0.00 د.أ</strong>
+            </div>
+            <p>رسوم التوصيل تُحدّد حسب منطقتك.</p>
+            <button type="button" id="checkoutButton">متابعة الطلب <span>←</span></button>
+          </div>
+        </section>
+
+        <section id="checkoutPanel" hidden>
+          <form class="checkout-form" id="checkoutForm">
+            <button class="back-to-cart" id="backToCart" type="button">→ رجوع للسلة</button>
+            <div class="order-type">
+              <label>
+                <input type="radio" name="orderType" value="delivery" checked>
+                <span>توصيل</span>
+              </label>
+              <label>
+                <input type="radio" name="orderType" value="pickup">
+                <span>استلام مباشر</span>
+              </label>
+            </div>
+            <label>
+              <span>الاسم</span>
+              <input name="name" type="text" placeholder="اسمك الكريم" required>
+            </label>
+            <label>
+              <span>رقم الهاتف</span>
+              <input name="phone" type="tel" inputmode="tel" placeholder="07XXXXXXXX" required>
+            </label>
+            <label id="addressField">
+              <span>عنوان التوصيل</span>
+              <textarea name="address" rows="2" placeholder="المنطقة، الشارع وأقرب نقطة دالة" required></textarea>
+            </label>
+            <label>
+              <span>ملاحظات <small>اختياري</small></span>
+              <textarea name="notes" rows="2" placeholder="بدون بصل، صوص زيادة..."></textarea>
+            </label>
+            <div class="checkout-total">
+              <span>الإجمالي</span>
+              <strong id="checkoutTotal">0.00 د.أ</strong>
+            </div>
+            <button class="send-order" type="submit">مراجعة الفاتورة</button>
+          </form>
+        </section>
+
+        <section class="invoice-panel" id="reviewPanel" hidden>
+          <div id="invoiceContent"></div>
+          <div class="invoice-actions">
+            <button class="invoice-edit" id="editOrderButton" type="button">تعديل البيانات</button>
+            <button class="invoice-send" id="sendWhatsappButton" type="button">
+              إرسال عبر واتساب <span>←</span>
+            </button>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </main>
+</body>
+
+</html>
